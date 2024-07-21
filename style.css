@@ -1,0 +1,50 @@
+.container{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:228px 300px 300px 300px;
+    grid-template-areas: 
+        'header header' 
+        'image content' 
+        'footer footer';
+
+}
+.header{
+    grid-area: header ;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#logofont{
+    font-family: "Inconsolata", monospace;
+}
+#text1{
+    font-family: monospace;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.image{
+    grid-area: image ;
+    width: 400px;
+    height: 400px;
+    background-image: url(Scarecrow\ \(1\).png);
+    background-position: center;
+    background-size: 390px;
+    background-repeat: no-repeat;
+    margin-left: 270px;
+
+}
+.content{
+    grid-area: content;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-top: 46px;
+}
+.footer{
+    margin-top: 150px;
+    grid-area: footer;
+    text-align: center;
+}
+#button1{
+    background-color: black;
+    color: white;
+}
